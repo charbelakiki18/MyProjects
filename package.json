@@ -4,13 +4,15 @@
   "description": "",
   "main": "fs_async.js",
   "scripts": {
-    "start": "node intro.js",
-    "dev": "nodemon intro.js"
+    "start": "nodemon intro.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }

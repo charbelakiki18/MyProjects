@@ -1,12 +1,14 @@
-const http = require('http')
+const express = require('express')
+const app = express()
 
-const server = http.createServer((req,res)=>{
-    console.log("Request")
-    res.end("Response")
+app.get('/',(req,res)=>{
+    console.log("User hit the resource")
+    res.send("Home")
 })
 
-server.listen(5000,()=>{
-    console.log("Server Listening")
+app.get('/about',(req,res)=>{
+    res.send("About")
 })
-
-console.log("Done")
+app.listen(5000, ()=>{
+    console.log('Server ON')
+})
